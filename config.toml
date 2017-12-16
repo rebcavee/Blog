@@ -1,6 +1,6 @@
-baseurl = "https://example.org/"
+baseurl = "https://voulgarakisblog.netlify.com/"
 languageCode = "en-us"
-title = "John Doe's blog"
+title = "Rebecca Voulgarakis's blog"
 # Define how many pages appear per site
 paginate = 10
 # Enable comments powered by Disqus by entering your disqus shortname
@@ -13,13 +13,13 @@ theme = "hugo-minimalist-theme"
 # with the hugo server command
 
 [params]
-    site_author = "John Doe"
-    site_description = "The awesome blog of John Doe."
-    location = "Earth"
+    site_author = "Rebecca Voulgarakis"
+    site_description = "Much Blogging About R Code"
+    location = "In the middle, somewhat elevated"
     # Link custom assets relative to /static
     avatar = "img/profile-image.png"
     header_background = "img/desk.jpg"
-    header_title = "Customizable header title"
+    header_title = "A Data Science Blog"
     copyright = "Powered by [Hugo](http://gohugo.io)."
     custom_css = []
     custom_js  = []
