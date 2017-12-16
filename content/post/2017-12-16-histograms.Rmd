@@ -1,0 +1,33 @@
+---
+title: Histograms
+author: Rebecca Voulgarakis
+date: '2017-12-16'
+slug: histograms
+categories:
+  - R
+  - Data Visualization
+tags: []
+---
+
+For our last exercise in data visualization, let's make a histogram! As always, let's make sure we're armed with the packages we need:
+
+```{r}
+library(Lahman)
+library(sqldf)
+library(ggplot2)
+```
+
+Suppose we want to see Kenny Lofton's stolen bases.
+
+```{r}
+query<-"SELECT SB FROM Batting
+WHERE playerID='loftoke01'"
+result<-sqldf(query)
+```
+
+Let's make a histogram. A great thing about ggplot2 is that you can customize colors within your chart to give it flair and make it easier to read if you find that that's an issue. Let's try it:
+
+```{r}
+ggplot()+
+  geom_histogram(data=result,aes(x=SB),bins=5,color='blue',fill='white')
+```

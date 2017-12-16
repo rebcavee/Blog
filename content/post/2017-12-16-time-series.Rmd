@@ -1,0 +1,37 @@
+---
+title: Time Series
+author: Rebecca Voulgarakis
+date: '2017-12-16'
+slug: time-series
+categories:
+  - R
+  - Data Visualization
+tags: []
+---
+
+Hello again! Now, we'll address the time series plot. It's similar to a scatter plot, but the points are connected by a line, and the x axis displays time. Let's make sure we have our packages loaded and ready to go:
+
+```{r}
+library(Lahman)
+library(sqldf)
+library(ggplot2)
+```
+
+Let's say we want to see how the average MLB salary has changed throughout the years.
+
+```{r}
+query<-"SELECT yearID,avg(salary) AS avg_salary
+FROM Salaries
+GROUP BY yearID"
+result<-sqldf(query)
+```
+
+Now that we have the data we need, let's plot it with our trusty ggplot function:
+
+```{r}
+ggplot()+
+  geom_line(data=result,aes(x=yearID,y=avg_salary))+
+  xlab('year')
+ylab('salary')
+```
+

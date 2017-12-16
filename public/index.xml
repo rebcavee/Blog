@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>John Doe&#39;s blog</title>
+    <link>/</link>
+    <description>Recent content on John Doe&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Powered by [Hugo](http://gohugo.io).</copyright>
+    <lastBuildDate>Sun, 29 Oct 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Salutations!</title>
+      <link>/post/salutations/</link>
+      <pubDate>Sun, 29 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/post/salutations/</guid>
+      <description>Hello world,
+I’m in my last year living the bunhead life at Mercyhurst University—while this makes me an expert at surviving 12-hour school days on Clif bars and prayers alone, I have a lot to learn before I graduate. The material you encounter in this blog will primarily consist of my efforts to learn by teaching.
+To engage with my journey to unleashing the full extent of my data visualization superpowers, you’ll need the following:</description>
+    </item>
+    
+    <item>
+      <title>Scatter Plots</title>
+      <link>/post/scatter-plots/</link>
+      <pubDate>Sun, 29 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/post/scatter-plots/</guid>
+      <description>Let’s start our data visualization adventures with the scatter plot. Hypothetically speaking, if we wanted to look at home runs vs. strikeouts for some of baseball’s biggest stars, we could look at those relationships with a scatter plot.
+First, we’ll need to load the necessary packages for this session:
+library(Lahman) library(sqldf) ## Loading required package: gsubfn ## Loading required package: proto ## Warning in doTryCatch(return(expr), name, parentenv, handler): unable to load shared object &amp;#39;/Library/Frameworks/R.</description>
+    </item>
+    
+  </channel>
+</rss>
